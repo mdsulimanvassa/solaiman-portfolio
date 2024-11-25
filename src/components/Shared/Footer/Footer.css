@@ -1,0 +1,80 @@
+footer{
+    position: relative;
+}
+.footer_bg {
+    position: relative;
+    background-color: #020617;
+    z-index: 1; 
+    width: 100%;
+    height: 300px;
+    opacity: 1;
+   
+}
+
+.footer_imgs {
+    position: absolute;
+    background-image: url('../../../assets/3d-low-poly-mesh-surface-vector-abstract-background-dimensional-lattice-artistic-illustration_570429-24408.avif');
+    background-size:cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;
+    opacity: 0.1;
+
+}
+.footer_text{
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 22%;
+    z-index: 33;
+}
+.footer_all{
+    max-width: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.footer_img{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.footer_img a{
+    margin: 10px;
+}
+.footer_all .text-center{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.footer_list{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0px;
+}
+.footer_link{
+    display: flex;
+}
+.footer_link li{
+    margin: 10px;
+}
+.footer_footer{
+    margin: 0px 40px;
+}
+@media screen and (max-width:750px),
+screen and (max-width:420px) {
+    .footer_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+    }
+    .footer_footer{
+        margin: 5px 0px;
+    }
+}

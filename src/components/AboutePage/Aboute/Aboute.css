@@ -1,0 +1,17 @@
+.aboute_section{
+    width: 100%;
+    padding: 40px;
+}
+.aboute_section h1{
+    text-align: center;
+    width: 100%;
+    font-size: 45px;
+    color: #4ade80;
+    margin: 10px;
+}
+.aboute_section p{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

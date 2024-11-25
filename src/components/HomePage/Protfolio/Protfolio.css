@@ -1,0 +1,119 @@
+.portfolio_section h2{
+    text-align: center;
+    font-size: 45px;
+}
+.portfolio_section p{
+    text-align: center;
+    font-size: 18px;
+    color: #fbbf24;
+}
+.protfolio_container a:hover{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px;
+    color: #4ade80;
+}
+.protfolio_container h1{
+    
+    margin: 5px;
+}
+.protfolio_container a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.protfolio_container a span{
+    display: inline-block;
+    margin-bottom: -4px;
+    color:  #4ade80;
+}
+.protfolio_container h3{
+    color: #fbbf24;
+    margin: 5px;
+}
+.portfolio_scroll:hover .protfolio_container{
+    animation-play-state: paused;
+}
+
+
+.portfolio_scroll{
+    position: relative;
+    display: flex;
+    margin: 10px auto;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 1200px;
+    height: 350px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.protfolio_container{
+    position: absolute;
+    animation: swipe 30s linear infinite;
+    background-color: #1e272e;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.protfolio_image{
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+.protfolio_image img{
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+@keyframes swipe{
+    0%{
+        left: 100%;
+    }
+    to{
+        left: -1050px;
+    }
+}
+
+.item1{
+    animation-delay: calc(30s / 7 * (7 - 1) * -1);
+}
+.item2{
+    animation-delay: calc(30s / 7 * (7 - 2) * -1);
+}
+.item3{
+    animation-delay: calc(30s / 7 * (7 - 3) * -1);
+}
+.item4{
+    animation-delay: calc(30s / 7 * (7 - 4) * -1);
+}
+.item5{
+    animation-delay: calc(30s / 7 * (7 - 5) * -1);
+}
+.item6{
+    animation-delay: calc(30s / 7 * (7 - 6) * -1);
+}
+.item7{
+    animation-delay: calc(30s / 7 * (7 - 7) * -1);
+}
+
+@media screen and (max-width:750px),
+screen and (max-width:420px) {
+    @keyframes swipe{
+        0%{
+            left: 100%;
+        }
+        to{
+            left: -1800px;
+        }
+    }
+}

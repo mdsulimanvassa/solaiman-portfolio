@@ -1,0 +1,136 @@
+.myservice_bg h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.myservice_bg h6 {
+    text-align: center;
+    font-size: 22px;
+    color: #fbbf24;
+}
+
+.myservice_container {
+    background-color: #7f8c8d;
+    clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
+    padding: 150px 0px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.myservice_containt {
+    flex-basis: 28%;
+    /* max-width: 700px; */
+    background-color: #d35400;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    color: #ddd;
+}
+
+.myservice_containt h2 {
+    margin: 5px 0px;
+    font-size: large;
+}
+
+.myservice_containt p {
+    margin: 5px 0px;
+    height: 90px;
+}
+
+.myservice_containt a {
+    margin: 15px 0px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.myservice_containt a:hover {
+    margin: 15px 0px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #4ade80;
+}
+
+.myservice_containt a span {
+    margin-bottom: -4px;
+    display: inline-block;
+    color: #4ade80;
+}
+
+.myservice_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.myservice_image img {
+    width: 100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* animation poperty*/
+.myservice_containt {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.myservice_containt.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.left-animation {
+    transform: translateX(-80px);
+}
+
+.left-animation.animate {
+    transform: translateX(0);
+}
+
+.bottom-animation {
+    transform: translateX(-160px);
+}
+
+.bottom-animation.animate {
+    transform: translateY(0);
+}
+
+.right-animation {
+    transform: translateX(80px);
+}
+
+.right-animation.animate {
+    transform: translateX(0);
+}
+
+@media screen and (max-width:750px),
+screen and (max-width:420px) {
+    .myservice_container {
+        background-color: #7f8c8d;
+        clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 85%);
+        padding: 150px 0px;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .myservice_containt {
+        flex-basis: 31%;
+        max-width: 700px;
+        background-color: #d35400;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 15px;
+        color: #ddd;
+    }
+}

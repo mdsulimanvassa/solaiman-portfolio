@@ -1,0 +1,170 @@
+.education{
+    padding: 20px;
+}
+.education_containt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.education_education{
+    flex-basis: 47%;
+    margin: 0px 10px;
+    background-color: #1e272e;
+    padding: 20px;
+    border-radius: 20px;
+}
+.education_education h2{
+    text-align: center;
+    font-size: 35px;
+    color: #4ade80;
+    margin: 10px;
+}
+.education_container{
+    margin: 20px 0px;
+}
+.education_container h5{
+    margin: 5px 0px;
+    font-weight: 700;
+}
+.education_container h1{
+    margin: 5px 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bar{
+    font-size: 23px;
+    max-width: 600px;
+}
+.technical-bars .bar{
+    margin-top: 40px 0;
+}
+.technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.technical-bars .bar .progrees-line{
+    position: relative;
+    border-radius: 5px;
+    height: 30px;
+    background-color: #000;
+    margin-bottom: 15px;
+    animation: animates 1s cubic-bezier(1, 0, 0, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animates {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.technical-bars .bar .progrees-line span{
+    height: 100%;
+    background-color: #4ade80;
+    position: absolute;
+    animation: animates 1s 1s cubic-bezier(1, 0, 0, 1) forwards;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.progrees-line.html span{
+    width: 90%;
+}
+.progrees-line.javascript span{
+    width: 85%;
+}
+.progrees-line.typescript span{
+    width: 60%;
+}
+.progrees-line.python span{
+    width: 80%;
+}
+.progrees-line.react span{
+    width: 90%;
+}
+.progrees-line.node span{
+    width: 70%;
+}
+.progrees-line.express span{
+    width: 88%;
+}
+
+
+.progrees-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -20px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+}
+.progrees-line.html span::after{
+    content: '90%';
+}
+.progrees-line.javascript span::after{
+    content: '85%';
+}
+.progrees-line.typescript span::after{
+    content: '60%';
+}
+.progrees-line.python span::after{
+    content: '80%';
+}
+.progrees-line.react span::after{
+    content: '90%';
+}
+.progrees-line.node span::after{
+    content: '70%';
+}
+.progrees-line.express span::after{
+    content: '88%';
+}
+.progrees-line span::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:750px),
+screen and (max-width:420px) {
+    .education_containt{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .education_education{
+        margin-top: 20px;
+    }
+}
+
+
+

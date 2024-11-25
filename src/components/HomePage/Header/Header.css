@@ -1,0 +1,124 @@
+.header_containt{
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.header_container{
+    width: 48%;
+    padding: 20px;
+}
+.header_container h3{
+    font-size: 20px;
+}
+.header_container h1{
+    font-size: 25px;
+    color: #fbbf24;
+}
+.header_container p{
+    margin: 10px 0px;
+    color: #4ade80;
+}
+.header_button{
+    border: 1px solid #fde68a;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.header_button:hover{
+    background-color: #e0f2fe;
+    border: 1px solid #fde68a;
+    border-radius: 5px;
+    color: black;
+    padding: 8px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 600;
+}
+.header_container img{
+    width: 70%;
+}
+.header_expe{
+    position: relative;
+}
+.header_experience{
+    position: absolute;
+    background-color: #4ade80;
+    bottom: 15%;
+    display: inline;
+    right: 12%;
+    padding: 20px 20px;
+    border-radius: 30px;
+    max-width: 250px;
+    margin: 5px;
+    color: #000;
+    animation-name: drefant;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+.header_experience_2{
+    position: absolute;
+    background-color: #4ade80;
+    max-width: 250px;
+    display: inline;
+    bottom: 0;
+    right: 12%;
+    padding: 20px 20px;
+    border-radius: 30px;
+    margin: 5px;
+    color: #000;
+    animation-name: drefants;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drefant{
+    0%{
+        bottom: 15%;
+        right: 12%;
+    }
+    50%{
+        bottom: 20%;
+        right: 15%;
+    }
+    100%{
+        bottom: 15%;
+        right: 12%;
+    }
+}
+@keyframes drefants{
+    0%{
+        bottom: 0%;
+        right: 12%;
+    }
+    50%{
+        bottom: 5%;
+        right: 15%;
+    }
+    100%{
+        bottom: 0%;
+        right: 12%;
+    }
+}
+@media screen and (max-width:750px),
+screen and (max-width:420px) {
+    .header_containt{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .header_container{
+        width: 100%;
+        min-height: 100%;
+    }
+}
